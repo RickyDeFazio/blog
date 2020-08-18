@@ -1,3 +1,38 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+#welcome-header {
+  font-size: 200px;
+  color: purple;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px darkgreen;
+  margin-top: 50px;
+}
+
+#tagline {
+  text-align: center;
+  color: green;
+  font-size: 30px;
+}
+
+.container {
+  text-align: center;
+}
+
+#welcome-button:link,
+#welcome-button:visited {
+  background-color: purple;
+  color: lightgreen;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#welcome-button:hover,
+#welcome-button:active {
+  background-color: green;
+  color: purple;
+}
