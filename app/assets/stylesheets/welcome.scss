@@ -1,5 +1,5 @@
 #welcome-header {
-  font-size: 200px;
+  font-size: 11rem;
   color: purple;
   height: 50vh;
   display: flex;
@@ -7,13 +7,14 @@
   align-items: center;
   text-transform: uppercase;
   text-shadow: 2px 2px darkgreen;
-  margin-top: 50px;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 #tagline {
   text-align: center;
   color: green;
-  font-size: 30px;
+  font-size: 2.5rem;
 }
 
 .container {
@@ -27,12 +28,32 @@
   padding: 14px 25px;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bolder;
+  border-radius: 10px;
 }
 
 #welcome-button:hover,
 #welcome-button:active {
   background-color: green;
   color: purple;
+}
+
+/*==================================/
+  *** Media Queries ***
+/===================================*/
+
+@media only screen and (min-width: 575px) and (max-width: 699px) {
+  #welcome-header {
+    font-size: 13rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #welcome-header {
+    font-size: 15rem;
+  }
+  #tagline {
+    font-size: 3rem;
+  }
 }
